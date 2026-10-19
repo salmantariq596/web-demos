@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Speech-to-Text Demo</h1>
+        <p>Click the button below and start speaking. Your speech will be transcribed into text.</p>
+        
+        <div id="output" class="output">Your transcript will appear here...</div>
+        
+        <button id="start-button" class="button">Start Recording</button>
+        <button id="stop-button" class="button hidden">Stop Recording</button>
+        
+        <form action="save.php" method="POST" id="save-form">
+            <input type="hidden" name="transcript" id="transcript-input">
+            <button type="submit" class="button">Save Transcript</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
